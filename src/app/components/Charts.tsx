@@ -84,7 +84,7 @@ const BloodChart = ({ patient }: { patient: Patient }) => {
                     value={latest.blood_pressure.systolic.value}
                     status={latest.blood_pressure.systolic.levels}
                 />
-
+                <hr className="text-gray-300"/>
                 <ChartCard
                     title="Diastolic"
                     trend="up"
