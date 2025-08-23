@@ -27,7 +27,7 @@ const Menu = ({ patients, onSelect }: MenuProps) => {
   }
 
   return (
-    <div className="w-full lg:w-72 xl:w-80 bg-white rounded-xl p-4 max-h-250 overflow-y-auto">
+    <div className="w-full lg:w-72 xl:w-80 bg-white rounded-xl p-4 max-h-270 overflow-y-auto">
       <div className="flex justify-between mb-4">
         <h2 className="text-lg font-bold">Patients</h2>
         <FaSearch className="text-xl" />

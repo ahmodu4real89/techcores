@@ -12,7 +12,7 @@ const LabCard = ({ patient }: { patient: Lab[] }) => {
   }
   return (
    
-    <div className=" max-h-70 bg-white rounded-xl mt-8 p-4 overflow-y-auto">
+    <div className=" max-h-90 bg-white rounded-xl mt-8 p-4 overflow-y-auto">
         <h1 className="text-2xl mb-6 font-bold">Lab Results</h1>
             {patient.map((item, id)=>(
                 <div className="flex justify-between my-4 " key={id}>
