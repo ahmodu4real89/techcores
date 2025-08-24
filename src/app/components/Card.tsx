@@ -6,9 +6,10 @@ interface CardProps {
   value: string;
   status: string;
   bgColor?: string;
+   fontawe?: React.ReactNode;
 }
 
- const Card = ({ icon, label, value, status, bgColor = "bg-gray-100" }: CardProps)=> {
+ const Card = ({ icon, label, value, status, bgColor = "bg-gray-100", fontawe }: CardProps)=> {
   return (
     <div className={`${bgColor} p-6 rounded-xl`}>
       <Image 
@@ -20,7 +21,12 @@ interface CardProps {
       />
       <p className="text-base">{label}</p>
       <p className="font-bold text-3xl">{value}</p>
-      <p className="text-sm mt-4 text-gray-600 ">{status}</p>
+      <div className="flex gap-2 mt-4"> 
+        {fontawe && <div className="text-xl">{fontawe}</div>}
+          <p className="text-sm  text-gray-600 ">{status}</p>
+         
+      </div>
+
     </div>
   );
 }

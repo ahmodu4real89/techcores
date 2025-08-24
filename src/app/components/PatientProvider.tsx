@@ -54,10 +54,13 @@ export default function PatientProvider({ patients }: { patients: any }) {
         <Tables patient={selectedPatient.diagnostic_list} />
       </div>
 
-      <div className="w-full lg:w-1/5 rounded-xl">
+      
+      <div className="w-full lg:w-1/5 flex flex-col gap-4">
         <UserCard patient={selectedPatient} />
         <LabCard patient={selectedPatient.lab_results} />
       </div>
     </div>
   );
 }
+
+

@@ -9,7 +9,7 @@ const Navbar = () => {
     return (
         <div className='flex items-center  p-4 m-6 bg-white rounded-full'>
             <div className='hidden md:flex items-center gap-2 text-xs  px-2 flex-1'>
-                <Image src='/TestLogo.png' alt='' width={200} height={100} />
+                <Image src='/TestLogo.png' alt='' width={210} height={48} />
 
             </div>
 
@@ -18,7 +18,7 @@ const Navbar = () => {
                     <CiHome className="text-2xl" />
                     <span className=" ">  Overview</span>
                 </div>
-                <div className="flex gap-2 bg-green-600 px-8 py-2 rounded-full">
+                <div className="flex gap-2 bg-cyan-400 px-8 py-2 rounded-full">
                     <MdOutlinePeopleAlt className="text-2xl" />
                     <span className="  ">  Patient</span>
                 </div>

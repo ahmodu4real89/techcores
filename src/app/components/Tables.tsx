@@ -18,13 +18,13 @@ const Tables = ({ patient }: { patient?: PatientDiagnosist[] }) => {
       <h1 className="mb-4 font-bold text-2xl">Diagnostic List</h1>
     
       
-      <div className="max-h-50 overflow-y-auto">
+      <div className="h-50 overflow-y-auto">
         <table className="table-auto w-full border-collapse">
-          <thead className="bg-gray-100 text-sm">
+          <thead className="bg-gray-100 text-sm rounded-2xl">
             <tr>
-              <th className="p-3 text-left rounded-lg">Problem/Diagnosis</th>
+              <th className="p-3 text-left">Problem/Diagnosis</th>
               <th className="p-3 text-left">Description</th>
-              <th className="p-3 text-left rounded-lg">Status</th>
+              <th className="p-3 text-left">Status</th>
             </tr>
           </thead>
           <tbody>
