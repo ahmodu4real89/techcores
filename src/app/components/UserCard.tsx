@@ -25,7 +25,7 @@ const UserCard = ({ patient }: { patient: Patient }) => {
         );
     }
     return (
-        <div className="w-full mx-auto bg-white p-4 rounded-xl ">
+        <div className="w-full mx-auto bg-white p-2 rounded-xl ">
             <div className="flex items-center justify-center flex-col my-6">
                 {patient.profile_picture ? (
                     <Image
@@ -44,10 +44,8 @@ const UserCard = ({ patient }: { patient: Patient }) => {
                     </div>
                 )}
                 <p className="text-2xl font-semibold">{patient.name}</p>
-
-
                 
-            <div className=" mt-6">
+            <div className="mt-6 p-0">
                 <div className="flex gap-4 mt-2 ">
                     <div className="p-3 rounded-full bg-gray-100">
                         <FaRegCalendar className="text-xl" />
@@ -100,10 +98,7 @@ const UserCard = ({ patient }: { patient: Patient }) => {
             </div>
             </div>
 
-
-
-
-            <div className="flex justify-center mt-6">
+            <div className="flex justify-center m-6">
                 <button className="bg-cyan-400 hover:bg-cyan-500 text-white px-6 py-3 rounded-full text-sm font-medium shadow-sm transition">
                     Show All Information
                 </button>

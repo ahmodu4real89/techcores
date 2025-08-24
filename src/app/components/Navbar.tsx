@@ -8,13 +8,14 @@ import { MdCreditCard, MdOutlinePeopleAlt } from "react-icons/md"
 const Navbar = () => {
     return (
         <div className='flex items-center  p-4 m-6 bg-white rounded-full'>
-            <div className='hidden md:flex items-center gap-2 text-xs  px-2 flex-1'>
+             
+                <div className='hidden md:flex items-center gap-2 text-xs  px-2 flex-1'>
                 <Image src='/TestLogo.png' alt='' width={210} height={48} />
 
             </div>
 
-            <div className="flex items-center gap-6 justify-center w-full text-black flex-1 text-lg">
-                <div className="flex gap-2 ">
+            <div className="flex items-center gap-6 justify-center w-full text-black cursor-pointer  flex-1 text-lg">
+                <div className="flex gap-2 hover:bg-cyan-100 hover:p-2 hover:rounded-full">
                     <CiHome className="text-2xl" />
                     <span className=" ">  Overview</span>
                 </div>
@@ -22,16 +23,16 @@ const Navbar = () => {
                     <MdOutlinePeopleAlt className="text-2xl" />
                     <span className="  ">  Patient</span>
                 </div>
-                <div className="flex gap-2 ">
+                <div className="flex gap-2 hover:bg-cyan-100 hover:p-2 hover:rounded-full">
                     <CiCalendar className="text-2xl" />
                     <span className=" ">  Schedule</span>
                 </div>
 
-                <div className="flex gap-2 ">
+                <div className="flex gap-2 hover:bg-cyan-100 hover:p-2 hover:rounded-full">
                     <FiMessageSquare className="text-2xl" />
                     <span className=" ">  Message</span>
                 </div>
-                <div className="flex gap-2 ">
+                <div className="flex gap-2 hover:bg-cyan-100 hover:p-2 hover:rounded-full ">
                     <MdCreditCard className="text-2xl" />
                     <span className=" ">  Transaction</span>
                 </div>
@@ -61,7 +62,9 @@ const Navbar = () => {
                 </div>
             </div>
 
-        </div>
+         </div>
+
+      
     )
 }
 

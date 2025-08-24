@@ -27,12 +27,12 @@ const Menu = ({ patients, onSelect }: MenuProps) => {
   }
 
   return (
-    <div className="w-full lg:w-72 xl:w-80 bg-white rounded-xl p-4 max-h-270 overflow-y-auto">
+    <div className="w-full lg:w-72 xl:w-80 bg-white rounded-xl p-4 ">
       <div className="flex justify-between mb-4">
         <h2 className="text-lg font-bold">Patients</h2>
         <FaSearch className="text-xl" />
       </div>
-
+<div className="max-h-250 overflow-y-auto">
       {patients.map((patient) => (
         <div
           className="flex items-center justify-between gap-2 w-full flex-1 mb-3 cursor-pointer hover:bg-cyan-100 p-2 rounded"
@@ -69,6 +69,8 @@ const Menu = ({ patients, onSelect }: MenuProps) => {
           </div>
         </div>
       ))}
+</div>
+
     </div>
   );
 };
